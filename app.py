@@ -94,7 +94,7 @@ def procesar_pdf(archivo_pdf, nombre_pdf):
         st.error("El PDF no contiene texto.")
         return None
 
-    trozos = [texto[i:i + 1000] for i in range(0, len(texto), 1000)]
+    trozos = [texto[i:i + 3000] for i in range(0, len(texto), 3000)]
 
     documentos = []
     for i, chunk in enumerate(trozos):
